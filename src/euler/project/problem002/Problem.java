@@ -11,7 +11,27 @@ public class Problem {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		int fibA = 1, fibB = 2, fibT = 0, cont = 2;
+		int stoppingMark = 4000000;
+		while (fibA < stoppingMark && fibB < stoppingMark)
+		{
+			fibT = fibA + fibB;
+			fibA = fibB;
+			fibB = fibT;
+			
+			if(isEven(fibT))
+			{
+				cont += fibT;
+			}
+			
+		}
+	}
+	
+	public static boolean isEven(int x) {
+		if((x % 2) == 0)
+			return true;
+		else
+			return false;
 	}
 
 }
