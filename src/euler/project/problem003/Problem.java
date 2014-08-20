@@ -7,7 +7,7 @@ public class Problem {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		long max = 0, maxAux = 0, cont = 1;
+		long max = 0, cont = 1;
 		long x = 600851475143L;
 		
 		while(cont < Math.sqrt(x)) {
