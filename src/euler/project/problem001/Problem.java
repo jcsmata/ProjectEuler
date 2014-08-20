@@ -17,11 +17,7 @@ public class Problem {
 		{
 			if((i % 3) == 0 || (i % 5) == 0)
 				cont += i;
-		}
-
-		System.out.println(cont);
-		
-
+		}	
 	}
 
 }
