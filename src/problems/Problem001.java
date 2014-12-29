@@ -1,4 +1,4 @@
-package euler.project.problem001;
+package problems;
 
 
 /**
@@ -7,7 +7,7 @@ package euler.project.problem001;
  * Find the sum of all the multiples of 3 or 5 below 1000. 
  */
 
-public class Problem {
+public class Problem001 {
 
 	public static void main(String[] args) {
 		for(int i = 0; i<1000; i++)
