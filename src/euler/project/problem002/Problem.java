@@ -9,9 +9,10 @@ public class Problem {
 	 * By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
 	 * find the sum of the even-valued terms.
 	 */
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int fibA = 1, fibB = 2, fibT = 0, cont = 2;
+		int fibA = 1, fibB = 2, fibT = 0;
 		int stoppingMark = 4000000;
 		while (fibA < stoppingMark && fibB < stoppingMark)
 		{
@@ -21,7 +22,6 @@ public class Problem {
 			
 			if(isEven(fibT))
 			{
-				cont += fibT;
 			}
 			
 		}
