@@ -12,23 +12,23 @@ public class Problem004 {
 		
 		int maxPalindrome = 0;
 
-		int number1 = 999;
-		int number2 = 999;
+		int number1 = 100;
+		int number2 = 100;
 		
-		while(number1 > 0)
+		while(number1 < 999)
 		{
-			while(number2 > 0)
+			while(number2 < 999)
 			{
 				if(isPalindrome(number1*number2))
 				{
 					maxPalindrome = Math.max(maxPalindrome, number1*number2);
 				}
 				
-				number2--;
+				number2++;
 			}
 			
-			number2=999;
-			number1--;
+			number2=100;
+			number1++;
 		}
 		
 		System.out.print(maxPalindrome);
