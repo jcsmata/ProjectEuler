@@ -9,3 +9,4 @@ Problem 003: Largest prime factor
 
 Problem 004: Largest palindrome product
 
+Problem 005: Smallest multiple
