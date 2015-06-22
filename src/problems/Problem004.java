@@ -9,17 +9,46 @@ public class Problem004 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		int maxPalindrome = 0;
 
 		int number1 = 999;
 		int number2 = 999;
 		
+		while(number1 > 0)
+		{
+			while(number2 > 0)
+			{
+				if(isPalindrome(number1*number2))
+				{
+					maxPalindrome = Math.max(maxPalindrome, number1*number2);
+				}
+				
+				number2--;
+			}
+			
+			number2=999;
+			number1--;
+		}
 		
+		System.out.print(maxPalindrome);
 	}
 	
-	private boolean palindrome(int number)
+	private static boolean isPalindrome(int number)
 	{
-		return false;	
-	
+		 char[] numberA = String.valueOf(number).toCharArray();
+		 boolean isPalindrome = true;
+		 
+		for(int i = 0; i <= Math.floorDiv(numberA.length,2); i++)
+		{
+			if(numberA[i] != numberA[numberA.length-1-i])
+			{
+				isPalindrome = false;
+				break;
+			}
+		}
+				 
+		 return isPalindrome;
 	}
 
 }
