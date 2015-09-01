@@ -9,6 +9,32 @@ public class Problem005 {
 	
 	public static void main(String[] args)
 	{
+		double number = 2520;
+		double result = 0;
+		boolean divisible = false;
 		
+		while(!divisible)
+		{
+			number++;
+			for(int i = 1; i <= 20; i++)
+			{
+				result = number / i;
+				//System.out.println(result);
+				
+				if(result == (int) result)
+				{
+					if(i == 20)
+						divisible = true;
+				}
+				else
+					break;
+			
+			}
+			
+			
+		}
+		
+		System.out.print(number);
+
 	}
 }
