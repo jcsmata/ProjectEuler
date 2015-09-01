@@ -34,7 +34,7 @@ public class Problem005 {
 			
 		}
 		
-		System.out.print(number);
+		System.out.printf("%.0f",number);
 
 	}
 }
